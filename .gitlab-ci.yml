@@ -5,4 +5,4 @@ buildjob:
   script:
     - docker build -t sahilksk/flaskapp:latest .
     - docker image push sahilksk/flaskapp:latest
-    - aws ecs update-service --cluster sk-flaskapp-cicd --service sk-flaskapp-cicd-service --force-new-deployment
+    - aws ecs update-service --cluster sk-flaskapp-cicd --service sk-flaskapp-cicd-service
